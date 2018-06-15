@@ -7,7 +7,7 @@ go_large.txt
 go.py
 __pycache__
 go_small.txt
-DMIS_PTG_algorith/*
+DMIS_PTG_algorithm/*
 figures/*
 result.py
 README
