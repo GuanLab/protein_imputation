@@ -1,25 +1,48 @@
 import numpy as np
-from helper import getNormData, performance, correlation
+from matplotlib import pyplot as plt
+from helper import getNormData, performance, correlation, outputFile
 import warnings
 
 
 warnings.filterwarnings('ignore')
 
-def calculate(fold, perct, is_nrmse):
-    result = []
-    models = ['svr', 'lsl', 'lr', 'dt']
+
+def calculate(perct, is_nrmse, test_num):
+    models = ['svr', 'lsl', 'lr', 'dt', 'pred']
     for model in models:
-        r = []
-        for i in range(fold):
-            held, gene, sample = getNormData('result/per_{}/data_{}.txt'.format(perct, i))
-            result, gene, sample = getNormData('result/per_{}/{}_{}.txt'.format(perct, model, i))
-            true, gene, sample = getNormData('result/data_{}.txt'.format(i))
-            num_missing = []
-            for h in held:
-                num_missing.append(np.sum(h == 0))
+        perf = []
+        for test in range(test_num):
+            held, gene, sample = getNormData('output/per_{}/held_{}.txt'.format(perct, test))
+            # held, gene, sample = getNormData('output/sub_0/held_{}.txt'.format(test))
+            result, gene, sample = getNormData('output/per_{}/{}_{}.txt'.format(perct, model, test))
+            # result, gene, sample = getNormData('output/sub_0/{}_{}.txt'.format(model, test))
+            true, gene, sample = getNormData('output/true_{}.txt'.format(test))
             if is_nrmse:
-                r.append(performance(result, true, np.array(num_missing)))
+                perf.append(performance(result, true, held))
             else:
-                r.append(correlation(result, true, held))
-        result.append(r)
-    return result
+                perf.append(correlation(result, true, held, False))
+        print(perf)
+
+def plot(perct, clr):
+    model = 'lr'
+    held, gene, sample = getNormData('output/per_{}/held_0.txt'.format(perct))
+    result, gene, sample = getNormData('output/per_{}/{}_0.txt'.format(perct, model))
+    true, gene, sample = getNormData('output/true_0.txt')
+
+    held = np.ndarray.flatten(held)
+    r = np.ndarray.flatten(result)[held == 0.0]
+    t = np.ndarray.flatten(true)[held == 0.0]
+    plt.style.use('ggplot')
+    plt.plot(t, r, '.', color=clr, alpha=0.5)
+    plt.xlabel('Observed Data', fontsize=20, color='black')
+    plt.ylabel('Predicted Data', fontsize=20, color='black')
+    # plt.title(str(perct*100)+'%', fontsize=20)
+
+
+# calculate(0.2, False, 10)
+
+plot(0.08,'teal')
+plot(0.05,'tomato')
+plt.plot([1,8],[1,8],color='black',linewidth=0.8)
+plt.show()
+
