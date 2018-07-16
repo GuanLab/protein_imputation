@@ -11,4 +11,8 @@ DMIS_PTG_algorithm/*
 figures/*
 result.py
 README
-*.txt
+.DS_Store
+*.pdf
+n*.txt
+p*.txt
+s*.txt
