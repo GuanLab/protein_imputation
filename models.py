@@ -17,10 +17,10 @@ for line in sys.stdin:
 # for line in sys.stdin:
 #     perct = float(line.rstrip())
 #     break
-perct = 0.05
-mod = 'lsl'
+perct = 0.08
+mod = 'lr'
 
-filename = 'data/retrospective_ova_JHU_proteome_sort_common_gene_7061.txt'
+filename = 'data/retrospective_ova_PNNL_proteome_sort_common_gene_7061.txt'
 data, gene, sample = helper.getNormData(filename)
 row, col = data.shape
 # perct = 0.05
@@ -36,8 +36,8 @@ if avg:
     held = pred.copy()
     for d in pred:
         d[d == 0.0] = np.nanmean(d[np.nonzero(d)])
-    perf = helper.performance(pred, data, held)
-    print(perct, perf)
+    perf = helper.performanceAll(pred, data, held)
+    helper.outputFile(perf.T, 'temp/avg_{}.txt'.format(test_num), gene,['0'])
 
 model = True
 if model:
@@ -47,7 +47,7 @@ if model:
     index = helper.crossValidation(fold, data.shape[1], test_num)
 
     hold_out_ftr = True
-    average = False
+    average = True
     new_sample = []
     total_result = []
     total_held = []
@@ -106,7 +106,7 @@ if model:
 
     helper.outputFile(total_result, out_f, gene, new_sample)
     helper.outputFile(total_held,
-        'output/per_{}/held_{}.txt'.format(perct, test_num), gene, new_sample)
+        'output_2/per_{}/held_{}.txt'.format(perct, test_num), gene, new_sample)
     helper.outputFile(total_true,
-        'output/true_{}.txt'.format(test_num), gene, new_sample)
+        'output_2/true_{}.txt'.format(test_num), gene, new_sample)
 

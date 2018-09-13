@@ -1,0 +1,70 @@
+GO biological process complete	Homo sapiens - REFLIST (21042)	upload_1 (99)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (raw P-value)	upload_1 (FDR)
+interaction with other organism via secreted substance involved in symbiotic interaction
+interaction with other organism via secreted substance involved in symbiotic interaction (GO:0052047)	2	2	.01	+	 > 100	1.29E-04	4.40E-02
+negative regulation of fibrinolysis
+negative regulation of fibrinolysis (GO:0051918)	10	3	.05	+	63.76	2.75E-05	1.65E-02
+regulation of fibrinolysis (GO:0051917)	14	3	.07	+	45.55	6.46E-05	2.97E-02
+regulation of biological process (GO:0050789)	11552	75	54.35	+	1.38	2.58E-05	1.61E-02
+biological regulation (GO:0065007)	12223	76	57.51	+	1.32	1.35E-04	4.39E-02
+negative regulation of biological process (GO:0048519)	5087	44	23.93	+	1.84	1.02E-05	8.82E-03
+collagen fibril organization
+collagen fibril organization (GO:0030199)	44	8	.21	+	38.64	1.10E-10	5.73E-07
+supramolecular fiber organization (GO:0097435)	441	11	2.07	+	5.30	8.78E-06	8.58E-03
+cellular component organization (GO:0016043)	5477	47	25.77	+	1.82	5.13E-06	5.34E-03
+cellular component organization or biogenesis (GO:0071840)	5656	50	26.61	+	1.88	6.30E-07	1.09E-03
+protein-containing complex subunit organization (GO:0043933)	1817	23	8.55	+	2.69	1.04E-05	8.53E-03
+extracellular matrix organization (GO:0030198)	320	16	1.51	+	10.63	3.98E-12	3.11E-08
+extracellular structure organization (GO:0043062)	362	17	1.70	+	9.98	2.07E-12	3.23E-08
+endodermal cell differentiation
+endodermal cell differentiation (GO:0035987)	41	4	.19	+	20.74	5.82E-05	2.93E-02
+endoderm formation (GO:0001706)	48	4	.23	+	17.71	1.03E-04	3.75E-02
+negative regulation of blood coagulation
+negative regulation of hemostasis (GO:1900047)	47	4	.22	+	18.09	9.55E-05	3.73E-02
+negative regulation of blood coagulation (GO:0030195)	47	4	.22	+	18.09	9.55E-05	3.64E-02
+negative regulation of coagulation (GO:0050819)	51	4	.24	+	16.67	1.28E-04	4.46E-02
+sulfur compound catabolic process
+sulfur compound catabolic process (GO:0044273)	54	4	.25	+	15.74	1.58E-04	4.75E-02
+platelet degranulation
+platelet degranulation (GO:0002576)	128	7	.60	+	11.62	3.38E-06	3.77E-03
+regulated exocytosis (GO:0045055)	693	15	3.26	+	4.60	1.02E-06	1.60E-03
+exocytosis (GO:0006887)	776	17	3.65	+	4.66	1.50E-07	3.35E-04
+secretion by cell (GO:0032940)	971	17	4.57	+	3.72	3.13E-06	3.76E-03
+secretion (GO:0046903)	1084	17	5.10	+	3.33	1.30E-05	9.69E-03
+transport (GO:0006810)	4396	44	20.68	+	2.13	1.59E-07	3.10E-04
+establishment of localization (GO:0051234)	4508	45	21.21	+	2.12	1.06E-07	3.32E-04
+localization (GO:0051179)	5574	54	26.22	+	2.06	3.94E-09	1.54E-05
+vesicle-mediated transport (GO:0016192)	1892	25	8.90	+	2.81	1.79E-06	2.54E-03
+SRP-dependent cotranslational protein targeting to membrane
+SRP-dependent cotranslational protein targeting to membrane (GO:0006614)	94	5	.44	+	11.31	1.03E-04	3.82E-02
+cotranslational protein targeting to membrane (GO:0006613)	100	5	.47	+	10.63	1.36E-04	4.32E-02
+cellular localization (GO:0051641)	2355	28	11.08	+	2.53	2.84E-06	3.70E-03
+regulation of cell shape
+regulation of cell shape (GO:0008360)	159	7	.75	+	9.36	1.32E-05	9.35E-03
+regulation of anatomical structure morphogenesis (GO:0022603)	998	15	4.70	+	3.19	7.18E-05	3.21E-02
+translational initiation
+translational initiation (GO:0006413)	146	6	.69	+	8.73	8.09E-05	3.32E-02
+nuclear-transcribed mRNA catabolic process
+mRNA catabolic process (GO:0006402)	212	8	1.00	+	8.02	9.20E-06	8.45E-03
+nuclear-transcribed mRNA catabolic process (GO:0000956)	195	7	.92	+	7.63	4.64E-05	2.50E-02
+RNA catabolic process (GO:0006401)	242	8	1.14	+	7.03	2.32E-05	1.51E-02
+mRNA metabolic process (GO:0016071)	678	16	3.19	+	5.02	1.37E-07	3.57E-04
+connective tissue development
+connective tissue development (GO:0061448)	215	7	1.01	+	6.92	8.41E-05	3.37E-02
+negative regulation of cell adhesion
+negative regulation of cell adhesion (GO:0007162)	253	8	1.19	+	6.72	3.15E-05	1.82E-02
+receptor-mediated endocytosis
+receptor-mediated endocytosis (GO:0006898)	275	8	1.29	+	6.18	5.58E-05	2.91E-02
+exocytosis (GO:0006887)	776	17	3.65	+	4.66	1.50E-07	3.35E-04
+import into cell (GO:0098657)	716	12	3.37	+	3.56	1.51E-04	4.73E-02
+wound healing
+wound healing (GO:0042060)	467	10	2.20	+	4.55	8.07E-05	3.41E-02
+response to wounding (GO:0009611)	558	11	2.63	+	4.19	7.23E-05	3.14E-02
+leukocyte activation involved in immune response
+cell activation involved in immune response (GO:0002263)	614	12	2.89	+	4.15	3.61E-05	2.01E-02
+leukocyte activation involved in immune response (GO:0002366)	610	11	2.87	+	3.83	1.56E-04	4.78E-02
+cell activation (GO:0001775)	1032	15	4.86	+	3.09	1.04E-04	3.69E-02
+immune effector process (GO:0002252)	1055	15	4.96	+	3.02	1.32E-04	4.39E-02
+locomotion
+locomotion (GO:0040011)	1254	18	5.90	+	3.05	2.27E-05	1.54E-02
+leukocyte mediated immunity
+leukocyte mediated immunity (GO:0002443)	755	13	3.55	+	3.66	6.02E-05	2.94E-02

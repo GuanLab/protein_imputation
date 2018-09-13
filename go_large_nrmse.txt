@@ -1,0 +1,103 @@
+GO biological process complete	Homo sapiens - REFLIST (21042)	upload_1 (512)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (raw P-value)	upload_1 (FDR)
+DNA damage response, signal transduction by p53 class mediator
+DNA damage response, signal transduction by p53 class mediator (GO:0030330)	79	10	1.92	+	5.20	4.97E-05	1.94E-02
+cellular process (GO:0009987)	15225	427	370.46	+	1.15	8.78E-09	1.71E-05
+biological regulation (GO:0065007)	12223	340	297.41	+	1.14	1.62E-04	3.72E-02
+cellular response to stress (GO:0033554)	1585	69	38.57	+	1.79	4.55E-06	4.18E-03
+signal transduction by p53 class mediator (GO:0072331)	118	13	2.87	+	4.53	1.49E-05	1.01E-02
+cellular response to UV
+cellular response to UV (GO:0034644)	77	9	1.87	+	4.80	2.04E-04	4.55E-02
+response to UV (GO:0009411)	138	13	3.36	+	3.87	6.69E-05	2.18E-02
+response to abiotic stimulus (GO:0009628)	1081	48	26.30	+	1.82	1.13E-04	2.93E-02
+cellular response to abiotic stimulus (GO:0071214)	295	21	7.18	+	2.93	2.46E-05	1.32E-02
+cellular response to environmental stimulus (GO:0104004)	295	21	7.18	+	2.93	2.46E-05	1.28E-02
+rRNA processing
+rRNA processing (GO:0006364)	199	17	4.84	+	3.51	1.73E-05	1.08E-02
+rRNA metabolic process (GO:0016072)	226	18	5.50	+	3.27	2.36E-05	1.32E-02
+ribosome biogenesis (GO:0042254)	279	21	6.79	+	3.09	1.13E-05	8.39E-03
+ribonucleoprotein complex biogenesis (GO:0022613)	424	26	10.32	+	2.52	4.96E-05	1.99E-02
+cellular component biogenesis (GO:0044085)	2673	116	65.04	+	1.78	8.81E-10	2.75E-06
+cellular component organization or biogenesis (GO:0071840)	5656	213	137.62	+	1.55	1.28E-12	2.01E-08
+ncRNA metabolic process (GO:0034660)	528	30	12.85	+	2.34	4.97E-05	1.90E-02
+organic substance metabolic process (GO:0071704)	9415	289	229.09	+	1.26	1.67E-07	2.61E-04
+metabolic process (GO:0008152)	9877	309	240.33	+	1.29	2.11E-09	5.49E-06
+nitrogen compound metabolic process (GO:0006807)	8610	262	209.50	+	1.25	4.15E-06	4.06E-03
+cellular metabolic process (GO:0044237)	8971	285	218.28	+	1.31	6.12E-09	1.37E-05
+primary metabolic process (GO:0044238)	9073	272	220.77	+	1.23	7.50E-06	6.16E-03
+ncRNA processing (GO:0034470)	368	26	8.95	+	2.90	3.09E-06	3.44E-03
+RNA processing (GO:0006396)	844	40	20.54	+	1.95	1.02E-04	2.70E-02
+cell cycle checkpoint
+cell cycle checkpoint (GO:0000075)	200	15	4.87	+	3.08	2.06E-04	4.53E-02
+carboxylic acid catabolic process
+organic acid catabolic process (GO:0016054)	257	19	6.25	+	3.04	3.68E-05	1.64E-02
+carboxylic acid catabolic process (GO:0046395)	257	19	6.25	+	3.04	3.68E-05	1.60E-02
+cellular catabolic process (GO:0044248)	1732	74	42.14	+	1.76	3.48E-06	3.62E-03
+catabolic process (GO:0009056)	1959	79	47.67	+	1.66	1.59E-05	1.03E-02
+small molecule catabolic process (GO:0044282)	418	25	10.17	+	2.46	8.68E-05	2.47E-02
+organic substance catabolic process (GO:1901575)	1679	68	40.85	+	1.66	5.23E-05	1.90E-02
+cellular response to external stimulus
+cellular response to external stimulus (GO:0071496)	310	20	7.54	+	2.65	1.35E-04	3.20E-02
+response to hypoxia
+response to hypoxia (GO:0001666)	296	19	7.20	+	2.64	2.10E-04	4.50E-02
+response to oxidative stress
+response to oxidative stress (GO:0006979)	375	23	9.12	+	2.52	8.96E-05	2.50E-02
+establishment of organelle localization
+establishment of organelle localization (GO:0051656)	400	24	9.73	+	2.47	1.21E-04	3.05E-02
+localization (GO:0051179)	5574	175	135.63	+	1.29	1.45E-04	3.38E-02
+cellular localization (GO:0051641)	2355	91	57.30	+	1.59	1.48E-05	1.05E-02
+viral process
+viral process (GO:0016032)	587	33	14.28	+	2.31	1.98E-05	1.15E-02
+symbiont process (GO:0044403)	660	35	16.06	+	2.18	3.43E-05	1.58E-02
+interspecies interaction between organisms (GO:0044419)	705	35	17.15	+	2.04	1.13E-04	2.89E-02
+mitotic cell cycle process
+mitotic cell cycle process (GO:1903047)	591	31	14.38	+	2.16	1.30E-04	3.16E-02
+cell cycle process (GO:0022402)	963	46	23.43	+	1.96	2.74E-05	1.30E-02
+positive regulation of kinase activity
+positive regulation of kinase activity (GO:0033674)	587	30	14.28	+	2.10	2.26E-04	4.65E-02
+positive regulation of cellular process (GO:0048522)	5146	163	125.21	+	1.30	2.20E-04	4.63E-02
+positive regulation of biological process (GO:0048518)	5809	184	141.35	+	1.30	5.04E-05	1.88E-02
+regulation of catalytic activity (GO:0050790)	2272	83	55.28	+	1.50	2.39E-04	4.79E-02
+positive regulation of molecular function (GO:0044093)	1743	69	42.41	+	1.63	9.73E-05	2.67E-02
+regulation of kinase activity (GO:0043549)	865	41	21.05	+	1.95	7.92E-05	2.38E-02
+regulation of protein kinase activity
+regulation of protein kinase activity (GO:0045859)	772	38	18.78	+	2.02	7.82E-05	2.40E-02
+regulated exocytosis
+regulated exocytosis (GO:0045055)	693	34	16.86	+	2.02	1.71E-04	3.88E-02
+vesicle-mediated transport (GO:0016192)	1892	74	46.04	+	1.61	6.79E-05	2.16E-02
+regulation of cellular component biogenesis
+regulation of cellular component biogenesis (GO:0044087)	904	44	22.00	+	2.00	2.53E-05	1.28E-02
+organonitrogen compound catabolic process
+organonitrogen compound catabolic process (GO:1901565)	998	46	24.28	+	1.89	6.05E-05	2.15E-02
+organonitrogen compound metabolic process (GO:1901564)	5522	184	134.36	+	1.37	2.20E-06	2.86E-03
+regulation of organelle organization
+regulation of organelle organization (GO:0033043)	1225	54	29.81	+	1.81	3.97E-05	1.67E-02
+regulation of cellular component organization (GO:0051128)	2386	100	58.06	+	1.72	1.14E-07	1.97E-04
+protein-containing complex assembly
+protein-containing complex assembly (GO:0065003)	1540	63	37.47	+	1.68	7.79E-05	2.44E-02
+cellular component assembly (GO:0022607)	2459	98	59.83	+	1.64	1.51E-06	2.14E-03
+cellular component organization (GO:0016043)	5477	198	133.27	+	1.49	6.32E-10	2.47E-06
+protein-containing complex subunit organization (GO:0043933)	1817	71	44.21	+	1.61	9.84E-05	2.65E-02
+intracellular transport
+establishment of localization in cell (GO:0051649)	1763	72	42.90	+	1.68	2.63E-05	1.28E-02
+intracellular transport (GO:0046907)	1543	63	37.54	+	1.68	8.00E-05	2.36E-02
+phosphate-containing compound metabolic process
+phosphate-containing compound metabolic process (GO:0006796)	2119	81	51.56	+	1.57	6.12E-05	2.13E-02
+phosphorus metabolic process (GO:0006793)	2146	82	52.22	+	1.57	6.52E-05	2.17E-02
+regulation of multicellular organismal development
+regulation of multicellular organismal development (GO:2000026)	1890	72	45.99	+	1.57	2.35E-04	4.77E-02
+anatomical structure morphogenesis
+anatomical structure morphogenesis (GO:0009653)	2060	77	50.12	+	1.54	2.26E-04	4.70E-02
+developmental process (GO:0032502)	5527	173	134.48	+	1.29	2.07E-04	4.49E-02
+organelle organization
+organelle organization (GO:0006996)	3318	122	80.73	+	1.51	3.06E-06	3.68E-03
+cellular response to chemical stimulus
+cellular response to chemical stimulus (GO:0070887)	2712	98	65.99	+	1.49	8.23E-05	2.38E-02
+cellular protein metabolic process
+cellular protein metabolic process (GO:0044267)	3662	124	89.10	+	1.39	1.26E-04	3.12E-02
+other biological processes
+nervous system process (GO:0050877)	1335	13	32.48	-	.40	1.35E-04	3.25E-02
+detection of chemical stimulus involved in sensory perception of smell (GO:0050911)	416	0	10.12	-	 < 0.01	6.46E-05	2.20E-02
+detection of chemical stimulus involved in sensory perception (GO:0050907)	464	0	11.29	-	 < 0.01	1.98E-05	1.19E-02
+detection of chemical stimulus (GO:0009593)	499	0	12.14	-	 < 0.01	8.97E-06	7.01E-03
+sensory perception of smell (GO:0007608)	447	0	10.88	-	 < 0.01	4.76E-05	1.96E-02
+sensory perception of chemical stimulus (GO:0007606)	519	0	12.63	-	 < 0.01	6.12E-06	5.31E-03

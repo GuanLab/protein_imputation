@@ -13,11 +13,11 @@ p_jama=c(
 
 tbl=NULL
 for(i in c(5,8,10,20)){
-    x=read.delim(paste0('s',i,'.txt'),header=F)
+    x=read.delim(paste0('results/s',i,'.txt'),header=F)
     x=cbind(percent_missing=paste0(i,'%'),x)
     tbl=rbind(tbl,x)
 }
-colnames(tbl)[-1]=c('SVM','Lasso','Linear','RF','DMIS')
+colnames(tbl)[-1]=c('SVM','Lasso','Linear','RF','Factorization')
 df=melt(tbl)
 colnames(df)=c('percent_missing','Model','NRMSE')
 
@@ -35,7 +35,7 @@ p1 = ggplot(df,aes(x=Model,y=NRMSE)) +
     theme_grey() +
     geom_violin(width=1,aes(fill=Model),colour="black",alpha=1,linetype=1,lwd=0.5,scale="width")+
     scale_fill_manual(values=tmp_col) +
-    labs(x="Model",y="Rank Correlation")+
+    labs(x="Model",y="Spearman Correlation")+
     theme(axis.line.x = element_line(color="black", size = 0.5))+
     theme(axis.line.y = element_line(color="black", size = 0.5))+
     theme(axis.title.x = element_text(colour="black", size=20))+
@@ -50,7 +50,7 @@ p1 = ggplot(df,aes(x=Model,y=NRMSE)) +
 p1
 
 # pdf(file="figures/percentage.pdf",width=12,height=5,useDingbats=F)
-ggsave("figures/rank_correlation.png", width=12, height=5)
+ggsave("figures/rank_correlation_5.png", width=12, height=5)
 p1
 dev.off()
 

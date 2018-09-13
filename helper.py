@@ -63,16 +63,16 @@ def crossValidation(fold, column, test_num):
 def getFileModel(hold_out_feature, average, perct, idx, mdl):
     """ Return the path the result is output to and the machine
         learning model. """
-    cat = ''
-    if hold_out_feature and not average:
-        cat = 'sub_0'
-    elif hold_out_feature and average:
-        cat = 'sub_avg'
-    elif not hold_out_feature and not average:
-        cat = 'full_0'
-    else:
-        cat = 'full_avg'
-    # cat = 'per_{}'.format(perct)
+    # cat = ''
+    # if hold_out_feature and not average:
+    #     cat = 'sub_0'
+    # elif hold_out_feature and average:
+    #     cat = 'sub_avg'
+    # elif not hold_out_feature and not average:
+    #     cat = 'full_0'
+    # else:
+    #     cat = 'full_avg'
+    cat = 'per_{}'.format(perct)
     print('method: '+cat+'\tmodel: '+mdl)
     models = {
         'svr': svm.SVR(),
@@ -80,13 +80,14 @@ def getFileModel(hold_out_feature, average, perct, idx, mdl):
         'lr': linear_model.LinearRegression(),
         'dt': DecisionTreeRegressor()
     }
-    filename = 'output/'+cat+'/'+mdl+'_'+str(idx)+'.txt'
+    filename = 'output_2/'+cat+'/'+mdl+'_'+str(idx)+'.txt'
     return filename, models[mdl]
 
-def performance(result, true, held):
+def performanceAll(result, true, held):
     """ Calculate nrmse as performance of imputation.
         Only take missing values that are manually taken out into consideration.
-        (i.e. Missings in original data are ignored.) """
+        (i.e. Missings in original data are ignored.)
+        Return nrmse of all genes. """
     error = true - result
     error[np.isnan(error)] = 0.0
     error[np.nonzero(held)] = 0.0
@@ -105,9 +106,14 @@ def performance(result, true, held):
             t_diff.append(0.0)
     t_diff = np.array(t_diff)
     num_missing[t_diff == 0] = 0.0
-    nrmse = np.sqrt(rmse / num_missing)  / t_diff
-    return nrmse[num_missing > 0].mean()
+    nrmse = np.sqrt(rmse / num_missing) / t_diff
+    nrmse[num_missing <= 0] = float('nan')
+    return nrmse
 
+def performance(result, true, held):
+    """ Return mean nrmse. """
+    nrmse = performanceAll(result, true, held)
+    return np.nanmean(nrmse)
 
 def correlation(result, true, held, is_pearson):
     """ Calculate correlation of missing values.
@@ -116,12 +122,29 @@ def correlation(result, true, held, is_pearson):
     corr = []
     for r, t, h in zip(result, true, held):
         miss_pos = (h == 0.0)
-        if np.sum(miss_pos) > 4:
+        if np.sum(miss_pos) > 5:
             if is_pearson:
                 prs = pearsonr(r[miss_pos], t[miss_pos])[0]
             else:
                 prs = spearmanr(r[miss_pos], t[miss_pos])[0]
             corr.append(prs)
-    corr = np.array(corr)[~np.isnan(np.array(corr))]
-    return np.mean(corr)
+    # corr = np.array(corr)[~np.isnan(np.array(corr))]
+    return np.nanmean(corr)
+
+def summary(model, perct):
+    """ Output result summary to summary.txt.
+        Format:
+        Gene | perf_avg | expression | standard deviation | std/exp | missing ratio """
+    perfs, gene, cols = getNormData('temp/{}_{}.txt'.format(model, perct))
+    true = np.array(getRealData('data/retrospective_ova_JHU_proteome_sort_common_gene_7061.txt'))
+    
+    perf_avg = np.nanmean(perfs, axis=1)
+    express = np.nanmean(true, axis=1)
+    std = np.nanstd(perfs, axis=1)
+    std_exp = std / express
+    miss = np.sum(np.isnan(true), axis=1) / true.shape[1]
+
+    summary = np.vstack((perf_avg, express, std, std_exp, miss)).T
+    cols = ['perf_avg', 'expression', 'std', 'std/exp', 'miss_ratio']
+    outputFile(summary, 'results/{}_{}.txt'.format(model, perct), gene, cols)
 
